@@ -115,9 +115,15 @@
   display: block;
 }
 
-.footer{
+#logo{
+  text-align: center;
+}
+
+footer{
   background-color: black;
   color: white;
+  font-family: "Verdana",sans-serif;
+  padding: 5px;
   bottom: 0px;
   width: 100%
   left:0px
