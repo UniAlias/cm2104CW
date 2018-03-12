@@ -114,3 +114,11 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.footer{
+  background-color: black;
+  color: white;
+  bottom: 0px;
+  width: 100%
+  left:0px
+}
