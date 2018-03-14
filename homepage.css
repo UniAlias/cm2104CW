@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 #ideaName {
   color: white;
   float: left;
@@ -57,6 +61,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
 
 /* The dropdown container */
@@ -133,6 +138,7 @@
 
 #main {
   background-image: url("computer-background-design_1300-36.jpg");
+  height:auto;
 }
 
 footer{
@@ -141,6 +147,7 @@ footer{
   font-family: "Verdana",sans-serif;
   padding: 5px;
   bottom: 0px;
-  width: 100%
-  left:0px
+  width: 100%;
+  left:0px;
+
 }
