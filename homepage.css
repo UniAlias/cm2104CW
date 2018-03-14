@@ -119,6 +119,22 @@
   text-align: center;
 }
 
+#getStartedButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+#getStartedButton {
+  height: 50px;
+  width: 100px;
+}
+
+#main {
+  background-image: url("computer-background-design_1300-36.jpg");
+}
+
 footer{
   background-color: black;
   color: white;
