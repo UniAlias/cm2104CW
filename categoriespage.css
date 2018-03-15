@@ -2,6 +2,12 @@ body {
   background-image: url("Software Adoption.jpg");
 }
 
+
+#category-container {
+  margin-top: 100px;
+  width: 100%;
+}
+
 #categories-container {
   margin-top: 100px;
   display: flex;
@@ -13,11 +19,7 @@ body {
 }
 
 #category1-container {
-  margin-top: 40px;
-  margin-left: 40px;
   margin-right: 40px;
-  height: 280px;
-  background-color: white;
 }
 
 .category-heading {
