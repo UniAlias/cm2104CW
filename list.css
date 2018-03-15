@@ -1,0 +1,9 @@
+.col-sm-3{
+  text-align: left;
+}
+
+.thumbnail{
+  float: left;
+  max-height: 50%;
+  max-width: 50%;
+}
