@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 #ideaName {
   color: white;
   float: left;
@@ -57,6 +61,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
 
 /* The dropdown container */
@@ -119,12 +124,30 @@
   text-align: center;
 }
 
+#getStartedButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+#getStartedButton {
+  height: 50px;
+  width: 100px;
+}
+
+#main {
+  background-image: url("computer-background-design_1300-36.jpg");
+  height:auto;
+  width:
+}
+
 footer{
   background-color: black;
   color: white;
   font-family: "Verdana",sans-serif;
   padding: 5px;
   bottom: 0px;
-  width: 100%
-  left:0px
+  width: 100%;
+  left:0px;
 }
