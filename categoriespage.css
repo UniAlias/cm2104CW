@@ -1,11 +1,44 @@
 body {
   background-image: url("Software Adoption.jpg");
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   font-family: "Verdana", sans-serif;
+   text-align:left;
+   padding: 5px;
+}
 
-
-#category-container {
-  margin-top: 100px;
+#mainSection {
+  text-align: center;
+  height: 100%;
+  bottom: 0;
+}
+/* .footer {
+  background-color: black;
+  color: white;
+  font-family: "Verdana",sans-serif;
+  padding: 5px;
+  margin-bottom: 0px;
+  bottom: 0px;
   width: 100%;
+  left:0px;
+}
+*/
+
+
+.col-centered {
+  background-color: lightgrey;
+}
+#category-container {
+  align: center;
+  text-align: center;
+  width: 75%;
+
 }
 
 #categories-container {
@@ -32,4 +65,49 @@ body {
 .categoryPicture {
   height: 250px;
   width: 400px;
+}
+
+#signUp {
+  float: right;
+}
+
+.signUp {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#login {
+  float: right;
+
+}
+
+.login {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.passForm {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#passwordBox {
+  float: right;
+}
+
+.userForm {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
