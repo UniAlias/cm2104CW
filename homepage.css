@@ -138,16 +138,20 @@ body {
 
 #main {
   background-image: url("computer-background-design_1300-36.jpg");
-  height:auto;
-  width:
+  height:100%;
+  width:100%;
+  bottom: 0;
+  height: 100vh;
 }
 
-footer{
-  background-color: black;
-  color: white;
-  font-family: "Verdana",sans-serif;
-  padding: 5px;
-  bottom: 0px;
-  width: 100%;
-  left:0px;
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   font-family: "Verdana", sans-serif;
+   text-align:left;
+   padding: 5px;
 }
