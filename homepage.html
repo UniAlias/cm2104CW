@@ -2,9 +2,14 @@
 <html>
   <head>
     <link rel="stylesheet" href="homepage.css">
-    <title>Tech Start</title>
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <!--
     <header class="navbar">
       <h1 id="ideaName">Tech Start</h1>
       <div class="dropdown">
@@ -33,7 +38,43 @@
     			<input type="text" name="q" id="usernameBox" size="25" placeholder="Username">
     		</form>
       </div>
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-inverse" id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Homepage</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Navigation<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="homepage.html">Homepage</a></li>
+          <li><a href="categoriespage.html">Categories</a></li>
+          <li><a href="#">Content List</a></li>
+          <li><a href="userpage.html">User Page</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="signUp">
+      <button id="signUp">Sign Up</button>
+    </div>
+    <div class="login">
+      <button id="login">Login</button>
+    </div>
+    <div class="passForm">
+      <form name='password'>
+        <input type="text" name="q" id="passwordBox" size="25" placeholder="Password">
+      </form>
+    </div>
+    <div class="userForm">
+      <form name='username'>
+        <input type="text" name="q" id="usernameBox" size="25" placeholder="Username">
+      </form>
+    </div>
+  </div>
+
+</nav>
 
     <div id="main">
       <div class="vertical-centre"id="logoAndButton">
