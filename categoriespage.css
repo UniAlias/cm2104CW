@@ -58,11 +58,19 @@ body {
   width: 75%;
   height:auto;
 }
+<<<<<<< HEAD
 
 .vertical-centre {
   min-height: 100%;
   min-height: 100vh;
 
+=======
+
+.vertical-centre {
+  min-height: 100%;
+  min-height: 100vh;
+
+>>>>>>> 7727026d746306834cb7cc8321205e695f98fa85
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -147,9 +155,15 @@ body {
   overflow: hidden;
   display: inline-block;
   margin: 25px;
+<<<<<<< HEAD
 
 }
 
+=======
+}
+
+
+>>>>>>> 7727026d746306834cb7cc8321205e695f98fa85
 .expandable-container {
   margin-left: 26.25%;
   margin-right: 26.25%;
@@ -163,8 +177,21 @@ body {
 
 .addDivFunction {
   float: right;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7727026d746306834cb7cc8321205e695f98fa85
 }
 
 .navbar {
   margin-bottom: 0px;
 }
+<<<<<<< HEAD
+=======
+
+.divButton {
+  position: absolute;
+  /* float:left; */
+  margin-right: 0px;
+}
+>>>>>>> 7727026d746306834cb7cc8321205e695f98fa85

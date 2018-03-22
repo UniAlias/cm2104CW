@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 .thumbnail{
 	max-width: 20%;
 	width: auto;
 }
 
 /*.panel-body .thumbnail{display:inline;}
+=======
+.panel-body{
+  text-align: right;
+}
+
+img.resize{
+  width: 50%;
+  height: auto;
+}
+>>>>>>> 7727026d746306834cb7cc8321205e695f98fa85
