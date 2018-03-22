@@ -1,3 +1,4 @@
+/*Attributes for placeholder thmubnails*/
 .thumbnail{
 	max-width: 20%;
 	min-width: 240px;
@@ -5,6 +6,7 @@
 	margin-right: 5px;
 }
 
+/*Attributes for item text*/
 .item-desc{
 	padding-top: 3px;
 	border-left: 5px;
