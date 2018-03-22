@@ -147,8 +147,8 @@ body {
   overflow: hidden;
   display: inline-block;
   margin: 25px;
-
 }
+
 
 .expandable-container {
   margin-left: 26.25%;
@@ -163,8 +163,15 @@ body {
 
 .addDivFunction {
   float: right;
+
 }
 
 .navbar {
   margin-bottom: 0px;
+}
+
+.divButton {
+  position: absolute;
+  /* float:left; */
+  margin-right: 0px;
 }
