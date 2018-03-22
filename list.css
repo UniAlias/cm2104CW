@@ -1,9 +1,6 @@
-.col-sm-3{
-  text-align: left;
+.thumbnail{
+	max-width: 20%;
+	width: auto;
 }
 
-.thumbnail{
-  float: left;
-  max-height: 50%;
-  max-width: 50%;
-}
+/*.panel-body .thumbnail{display:inline;}
