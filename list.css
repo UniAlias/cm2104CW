@@ -1,8 +1,13 @@
-.panel-body{
-  text-align: right;
+/*Attributes for placeholder thmubnails*/
+.thumbnail{
+	max-width: 20%;
+	min-width: 240px;
+	float: left;
+	margin-right: 5px;
 }
 
-img.resize{
-  width: 50%;
-  height: auto;
+/*Attributes for item text*/
+.item-desc{
+	padding-top: 3px;
+	border-left: 5px;
 }
