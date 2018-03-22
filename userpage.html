@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>Userpage</title>
     <link rel="stylesheet" href="categoriespage.css">
-
+    <!-- These links and scripts are from bootstrap in order to get the styling and the functionality of the navbar correct -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- This is the js file that contains the hovering functionality, adding the categories as well as removing them -->
     <script src="userpage_jq.js"></script>
-    <script src="divControl.js"></script>
   </head>
   <body>
+    <!-- This is the navbar that has its css and functionality through the bootstrap that is linked in the head -->
     <!-- nav bar -->
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -50,123 +51,62 @@
   </div>
 
 </nav>
-  <!--
-  <div class="userCategoriesContainer">
-  -->
-
-    <!-- Div that all of the software packs will sit in -->
-
-    <!-- This is the code that is tested and works
-    <div class="container vertical-centre" id="category-container">
 
 
-      <div class="row row-centered row-block">
-        <div class="col-md-4 col-centered">
-          <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-          <h3 class="category-heading">Category 1</h3>
-        </div>
-
-        <div class="col-md-4 col-centered">
-          <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-          <h3 class="category-heading">Category 2</h3>
-        </div>
-
-        <div class="col-md-4 col-centered">
-          <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-          <h3 class="category-heading">Category 3</h3>
-        </div>
-      </div>
-    </div> -->
-
-
+    <!-- This is the big container div that expands with the addition of categories -->
     <div class="expandable-container" id="expandableId">
+      <!-- This is the div that contains the text box and button required to add a category -->
       <div class="addDivFunction">
+        <!-- This is the form that contains the text input box and the button -->
         <form name='search'>
           <input type="text" name="q" id="addbox" size="50" placeholder="Category name">
           <input type="button" value="Add Category!" onclick="addCategory()">
         </form>
       </div>
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
-      </div>
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
-      </div>
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
-      </div>
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
-      </div>
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
-      </div>
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
-      </div>
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
-      </div>
 
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
-      </div>
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
-      </div>
-      <div class="addedDiv">
-        <div class="divButton">
-          <button type="button" name="button">Remove</button>
-        </div>
-        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
-        <h3 class="category-heading">Category 1</h3>
 
+      <!-- These are just divs that are hard coded for testing.-->
+      <!--**************************************************** -->
+      <!-- The general repeating structure is that there is a div called 'addedDiv'
+            That contains a div called 'divButton' that holds the button, an image representing the category,
+            and the name of the category. They get their css from the 'categoriespage.css' file the javascript functionality comes from
+            userpage_jq.js
+          -->
+      <!--**************************************************** -->
+      <!-- The buttons within the .addedDiv div's will display only when the cursor is hovering over them -->
+      <!-- Clicking on the button will remove that category that the button is within -->
+      <div class="addedDiv">
+        <div class="divButton">
+          <button class='catbtn' type="button" name="button" onclick="removePlease()">Remove</button>
+        </div>
+        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
+        <h3 class="category-heading">Category 1</h3>
+      </div>
+      <div class="addedDiv">
+        <div class="divButton">
+          <button class='catbtn' type="button" name="button" onclick="removePlease()">Remove</button>
+        </div>
+        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
+        <h3 class="category-heading">Category 1</h3>
+      </div>
+      <div class="addedDiv">
+        <div class="divButton">
+          <button class='catbtn' type="button" name="button" onclick="removePlease()">Remove</button>
+        </div>
+        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
+        <h3 class="category-heading">Category 1</h3>
+      </div>
+      <div class="addedDiv">
+        <div class="divButton">
+          <button class='catbtn' type="button" name="button" onclick="removePlease()">Remove</button>
+        </div>
+        <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
+        <h3 class="category-heading">Category 1</h3>
       </div>
 
     </div>
 
-
-
-    <!-- Remove comments if needing to re-instate userCategoriesContainer
-  </div>
-    -->
-
+  <!-- This is the footer that is applied to every page, its css comes from the 'categoriespage.css' file -->
   <div class="footer">
     <p>Created By Serena-Niamh McGurk, Charlie Marsh, Ryan McConnell, Andrew Lamond, Elliot Kitching</p>
   </div>

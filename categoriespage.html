@@ -4,92 +4,59 @@
     <meta charset="utf-8">
     <title>Category Page</title>
     <link rel="stylesheet" href="categoriespage.css">
-    <!--<link rel="stylesheet" href="homepage.css">-->
-    <!-- Bootstrap link to stylesheet -->
-    <!-- Latest compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-
-    <!-- jQuery library -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-
-    <!-- Latest compiled JavaScript -->
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- These links and scripts are from bootstrap in order to get the styling and the functionality of the navbar correct -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--                  END OF BOOTSTRAP LINKS                  -->
   </head>
   <body>
-    <!-- Copied from the hompage -->
-    <!-- <header class="navbar">
-      <h1 id="ideaName">Tech Start</h1>
-      <div class="dropdown">
-        <button class="dropbtn">Get Started
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+    <!-- This is the navbar that has its css and functionality through the bootstrap that is linked in the head -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Tech Start</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Navigation<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!-- These are the links in the dropdown menu to our other pages -->
+              <li><a href="homepage.html">Homepage</a></li>
+              <li><a href="categoriespage.html">Categories</a></li>
+              <li><a href="list.html">Content List</a></li>
+              <li><a href="userpage.html">User Page</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- These following divs are the divs that are located to the very right of the nav bar -->
+        <!-- The divs flow from the very righthand side to the left -->
+        <div class="signUp">
+          <button id="signUp">Sign Up</button>
+        </div>
+        <div class="login">
+          <button id="login">Login</button>
+        </div>
+        <div class="passForm">
+          <form name='password'>
+            <input type="text" name="q" id="passwordBox" size="25" placeholder="Password">
+          </form>
+        </div>
+        <div class="userForm">
+          <form name='username'>
+            <input type="text" name="q" id="usernameBox" size="25" placeholder="Username">
+          </form>
         </div>
       </div>
-      <div class="signUp">
-        <button id="signUp">Sign Up</button>
-      </div>
-      <div class="login">
-        <button id="login">Login</button>
-      </div>
-      <div class="passForm">
-        <form name='password'>
-    			<input type="text" name="q" id="passwordBox" size="25" placeholder="Password">
-    		</form>
-      </div>
-      <div class="userForm">
-        <form name='username'>
-    			<input type="text" name="q" id="usernameBox" size="25" placeholder="Username">
-    		</form>
-      </div>
-    </header> -->
-    <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Tech Start</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Navigation<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="homepage.html">Homepage</a></li>
-          <li><a href="categoriespage.html">Categories</a></li>
-          <li><a href="list.html">Content List</a></li>
-          <li><a href="userpage.html">User Page</a></li>
-        </ul>
-      </li>
-    </ul>
-    <div class="signUp">
-      <button id="signUp">Sign Up</button>
-    </div>
-    <div class="login">
-      <button id="login">Login</button>
-    </div>
-    <div class="passForm">
-      <form name='password'>
-        <input type="text" name="q" id="passwordBox" size="25" placeholder="Password">
-      </form>
-    </div>
-    <div class="userForm">
-      <form name='username'>
-        <input type="text" name="q" id="usernameBox" size="25" placeholder="Username">
-      </form>
-    </div>
-  </div>
+    </nav>
 
-</nav>
-
-    <!-- End of Copy-->
+<!-- The div with id='mainSection' is a div that starts just under the nav bar and flows to the bottom of the page -->
 <div id="mainSection">
     <!-- This will be the main container for all of the categories -->
     <div class="container vertical-centre" id="category-container">
+      <!-- The rows use bootstrap that is linked within the head section in order to keep their styling -->
+      <!-- Each row contains an image and a heading underneath to depict the name of the category -->
       <div class="row row-centered row-block">
         <div class="col-md-4 col-centered">
           <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
@@ -110,7 +77,7 @@
         <div class="col-md-4 col-centered">
           <img src="computer-background-design_1300-36.jpg" alt="" class="categoryPicture">
           <h3 class="category-heading">Category 4</h3>
-          
+
         </div>
 
         <div class="col-md-4 col-centered">
@@ -123,9 +90,11 @@
           <h3 class="category-heading">Category 6</h3>
         </div>
       </div>
+    <!-- End of #category-container -->
     </div>
-
+<!-- End of #mainSection -->
 </div>
+  <!-- This is the footer that sticks to the bottom of the page and is the same in every webpage -->
   <div class="footer">
     <p>Created By Serena-Niamh McGurk, Charlie Marsh, Ryan McConnell, Andrew Lamond, Elliot Kitching</p>
   </div>

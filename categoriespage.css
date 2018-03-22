@@ -1,7 +1,11 @@
+/* This sets the background picture to fit the whole page
+    it is only used as a placeholder at the moment */
 body {
   background-image: url("Software Adoption.jpg");
   background-size: cover;
 }
+
+/* This css sets the footer on the page to be fixed to the bottom of the page */
 .footer {
    position: fixed;
    left: 0;
@@ -14,36 +18,18 @@ body {
    padding: 0px;
 }
 
+/* This gives the mainSection in 'categoriespage.html' its possitioning */
 #mainSection {
   text-align: center;
   height: 100%;
   bottom: 0;
 }
-/* .footer {
-  background-color: black;
-  color: white;
-  font-family: "Verdana",sans-serif;
-  padding: 5px;
-  margin-bottom: 0px;
-  bottom: 0px;
-  width: 100%;
-  left:0px;
-}
-*/
-
-/*
-.row-block {
-  width: 100%;
-  display: block;
-  display:
-}
-*/
 
 .row-block {
   background-color: none;
 }
 
-
+/* The next 3 css code sections help give the category-container div and divs within the #category-container their styling */
 .col-centered {
   background-color: lightgrey;
   padding-left: 0px;
@@ -59,6 +45,7 @@ body {
   height:auto;
 }
 
+/* .vertical-centre helps give the #category-container some aligning help */
 .vertical-centre {
   min-height: 100%;
   min-height: 100vh;
@@ -70,6 +57,7 @@ body {
   justify-content: center;
 }
 
+/* un-used
 #categories-container {
   margin-top: 100px;
   display: flex;
@@ -80,10 +68,13 @@ body {
   height: 700px;
 }
 
+
 #category1-container {
   margin-right: 40px;
 }
+*/
 
+/* .category-heading css give the headings within the category divs their styling and placing them within the center of their div */
 .category-heading {
   display: flex;
   align-items: center;
@@ -91,11 +82,13 @@ body {
   margin: 0;
 }
 
+/* .category-Picture css sets the width and height of the pictures within the category divs */
 .categoryPicture {
   height: 250px;
   width: 400px;
 }
 
+/* The .signUP and #signUp css sections set the styling for the div of the sign in button on the nav bar and the div that it is in */
 #signUp {
   float: right;
 }
@@ -108,6 +101,7 @@ body {
   margin-top: 10px;
 }
 
+/* The .login and #login css sections set the styling for the div of login button on the nav bar abd the div that it is in */
 #login {
   float: right;
 
@@ -121,6 +115,7 @@ body {
   margin-top: 10px;
 }
 
+/* .passForm and #passwordBox place the text input for the password in the right place by giving the div that the text input field is in margins */
 .passForm {
   float: right;
   margin-left: 10px;
@@ -133,6 +128,7 @@ body {
   float: right;
 }
 
+/* .userForm places the text input for the username in the right place by giving it the same margins as the password input field */
 .userForm {
   float: right;
   margin-left: 10px;
@@ -141,6 +137,7 @@ body {
   margin-top: 10px;
 }
 
+/* .addedDiv sets the background colour and styling properties for the category divs on userpage.html */
 .addedDiv {
   width: auto;
   background-color: lightgrey;
@@ -149,7 +146,7 @@ body {
   margin: 25px;
 }
 
-
+/* .expandable-container sets the background colour (just placeholder) of the div that holds all of the categories within userpage.html */
 .expandable-container {
   margin-left: 26.25%;
   margin-right: 26.25%;
@@ -161,17 +158,25 @@ body {
 
 }
 
+/*.addDivFunction css section places the category name input field and the button to create the category div in the
+  top righthand section of the #expandableId container */
 .addDivFunction {
   float: right;
-
 }
 
+/* Not needed atm (keeping incase we need to change back)
 .navbar {
   margin-bottom: 0px;
-}
+} */
 
+/*.divButton sets the position of the 'remove' button to be within the category divs on userpage.html */
 .divButton {
   position: absolute;
   /* float:left; */
   margin-right: 0px;
+}
+
+/*.catbtn css section makes the button not appear when the page is loaded */
+.catbtn {
+  display: none;
 }
