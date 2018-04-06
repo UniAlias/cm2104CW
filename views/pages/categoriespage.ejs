@@ -13,43 +13,7 @@
   </head>
   <body>
     <!-- This is the navbar that has its css and functionality through the bootstrap that is linked in the head -->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Homepage</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Navigation<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <!-- These are the links in the dropdown menu to our other pages -->
-              <li><a href="homepage.html">Homepage</a></li>
-              <li><a href="categoriespage.html">Categories</a></li>
-              <li><a href="list.html">Content List</a></li>
-              <li><a href="userpage.html">User Page</a></li>
-            </ul>
-          </li>
-        </ul>
-        <!-- These following divs are the divs that are located to the very right of the nav bar -->
-        <!-- The divs flow from the very righthand side to the left -->
-        <div class="signUp">
-          <button id="signUp">Sign Up</button>
-        </div>
-        <div class="login">
-          <button id="login">Login</button>
-        </div>
-        <div class="passForm">
-          <form name='password'>
-            <input type="text" name="q" id="passwordBox" size="25" placeholder="Password">
-          </form>
-        </div>
-        <div class="userForm">
-          <form name='username'>
-            <input type="text" name="q" id="usernameBox" size="25" placeholder="Username">
-          </form>
-        </div>
-      </div>
-    </nav>
+    <% include ../partials/navbar %>
 
 <!-- The div with id='mainSection' is a div that starts just under the nav bar and flows to the bottom of the page -->
 <div id="mainSection">

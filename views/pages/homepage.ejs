@@ -8,40 +8,7 @@
   </head>
   <body>
     <!-- This is the start of the navbar code. It gets the css and jquery that it needs for its styling and functionality -->
-    <nav class="navbar navbar-inverse" id="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Tech Start</a>
-        </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Navigation<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="homepage.html">Homepage</a></li>
-            <li><a href="categoriespage.html">Categories</a></li>
-            <li><a href="list.html">Content List</a></li>
-            <li><a href="userpage.html">User Page</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div class="signUp">
-        <button id="signUp">Sign Up</button>
-      </div>
-      <div class="login">
-        <button id="login">Login</button>
-      </div>
-      <div class="passForm">
-        <form name='password'>
-          <input type="text" name="q" id="passwordBox" size="25" placeholder="Password">
-        </form>
-      </div>
-      <div class="userForm">
-        <form name='username'>
-          <input type="text" name="q" id="usernameBox" size="25" placeholder="Username">
-        </form>
-      </div>
-    </div>
-  </nav>
+    <% include ../partials/navbar %>
     <!-- This is a div that sits under the nav bar and flows to the bottom of the page -->
     <div id="main">
       <div class="vertical-centre"id="logoAndButton">
