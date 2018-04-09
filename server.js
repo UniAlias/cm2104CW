@@ -29,3 +29,8 @@ app.get('/userPage', function(req, res) {
 app.get('/listpage', function(req, res) {
   res.render('pages/listpage');
 });
+
+//Display list of items
+app.get('/listSoftware', function(req, res) {
+  db.collection('software').find(req.body).toArray()
+}
