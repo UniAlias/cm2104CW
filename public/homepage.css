@@ -188,6 +188,7 @@ body {
 .login {
   padding: 0px;
   margin: 10px;
+  float: right;
 }
 
 .passForm {
