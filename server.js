@@ -26,7 +26,7 @@ app.set('view engine', 'ejs');
 
 //Homepage
 app.get('/', function(req, res) {
-  res.redirect('pages/homepage');
+  res.render('pages/homepage');
 });
 
 //categoriespage
@@ -48,3 +48,4 @@ app.get('/listpage', function(req, res) {
 // app.get('/listSoftware', function(req, res) {
 //   db.collection('software').find(req.body).toArray()
 // }
+app.listen(8080);
