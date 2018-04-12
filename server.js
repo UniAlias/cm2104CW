@@ -35,7 +35,7 @@ var cat = req.query.cat;
 db.collection('software').find({category: cat}).toArray(function(err, result) {
   if (err) throw err;
   res.send(result);
-}
+});
 
 });
 
