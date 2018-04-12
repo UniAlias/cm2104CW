@@ -7,7 +7,7 @@ $(document).ready(function() {
     console.log(url);
 
     $.ajax({
-      type: "POST",
+      type: "GET",
       url: url,
       success: function()
       {
