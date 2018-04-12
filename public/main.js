@@ -9,10 +9,10 @@ $(document).ready(function() {
     $.ajax({
       type: "GET",
       url: url,
-      success: function(result)
-      {
-        console.log(result);
-      }
+      // success: function(result)
+      // {
+      //   console.log(result);
+      // }
     });
 
   });
