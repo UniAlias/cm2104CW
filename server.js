@@ -1,8 +1,8 @@
 //server.js
 //load the things
 
-// const MongoClient = require('mongodb').MongoClient;
-// const url = "mongodb://localhost:27017/star_wars_quotes";
+const MongoClient = require('mongodb').MongoClient;
+const url = "mongodb://localhost:27017/software";
 const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
@@ -13,14 +13,14 @@ app.use(express.static('public'))
 //set the view engine to express
 app.set('view engine', 'ejs');
 
-// var db;
-//
-// MongoClient.connect(url, function(err, database) {
-//   if (err) throw err;
-//   db = database;
-//   app.listen(8080);
-//   console.log('listening');
-// });
+var db;
+
+MongoClient.connect(url, function(err, database) {
+  if (err) throw err;
+  db = database;
+  app.listen(8080);
+  console.log('listening');
+});
 
 //use .render to load up an ejs view file
 
@@ -40,8 +40,8 @@ app.get('/userPage', function(req, res) {
 });
 
 //list Page
-app.get('/listpage', function(req, res) {
-  res.render('pages/listpage');
+app.get('/list', function(req, res) {
+  res.render('pages/list');
 });
 
 //Display list of items
