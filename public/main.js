@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(".categoryPicture").click(function(event) {
-    console.log("Made it");
+    // console.log("Made it");
     var cat = event.target.id;
     console.log(cat);
     var url = "/getcategory?cat="+cat;

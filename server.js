@@ -29,7 +29,6 @@ app.get('/', function(req, res) {
   res.render('pages/homepage');
 });
 
-<<<<<<< HEAD
 
 app.get('/getcategory', function(req, res) {
 var cat = unescape(req.query.cat);
@@ -40,8 +39,6 @@ db.collection('software').find({category: cat}).toArray(function(err, result) {
 
 });
 
-=======
->>>>>>> a3b13aa0e6d7bd1ad4019033e8263538a0d6fd0b
 //categoriespage
 app.get('/categoriespage', function(req, res) {
   res.render('pages/categoriespage');
