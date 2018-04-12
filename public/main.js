@@ -11,7 +11,7 @@ $(document).ready(function() {
       url: url,
       success: function(result)
       {
-        console.log("success");
+        console.log(result);
       }
     });
 
