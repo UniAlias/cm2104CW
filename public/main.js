@@ -7,11 +7,11 @@ $(document).ready(function() {
     console.log(url);
 
     $.ajax({
-      type: "GET",
+      type: "POST",
       url: url,
-      success: function(result)
+      success: function()
       {
-        console.log(result);
+        console.log("success");
       }
     });
 
