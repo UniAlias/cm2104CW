@@ -55,7 +55,8 @@ app.get('/userPage', function(req, res) {
 
 //list Page
 app.get('/list', function(req, res) {
-  res.render('pages/list');
+  var cat = unescape(req.query.cat);
+  res.render('pages/list',{category:cat});
 });
 
 app.get('/login', function(req, res) {
