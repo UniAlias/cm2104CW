@@ -62,12 +62,12 @@ app.get('/list', function(req, res) {
 // }
 
 //-----------------POST methods
-app.post('/softwarelist', function(req, res) {
-    db.collection('software').find(req.id).toArray(function(err, result) {
-      if (err) throw err;
-
-    }
-}
+// app.post('/softwarelist', function(req, res) {
+//     db.collection('software').find(req.id).toArray(function(err, result) {
+//       if (err) throw err;
+//
+//     }
+// }
 
 
 app.listen(8080);
