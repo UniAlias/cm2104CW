@@ -35,7 +35,9 @@ var cat = unescape(req.query.cat);
 console.log(cat);
 db.collection('software').find({category: cat}).toArray(function(err, result) {
   if (err) throw err;
-  res.send(result);
+  res.render('pages/list', {
+    software: result
+  });
 });
 
 });
