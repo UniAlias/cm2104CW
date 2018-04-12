@@ -29,6 +29,7 @@ app.get('/', function(req, res) {
   res.render('pages/homepage');
 });
 
+<<<<<<< HEAD
 
 app.get('/getcategory', function(req, res) {
 var cat = unescape(req.query.cat);
@@ -39,9 +40,10 @@ db.collection('software').find({category: cat}).toArray(function(err, result) {
 
 });
 
+=======
+>>>>>>> a3b13aa0e6d7bd1ad4019033e8263538a0d6fd0b
 //categoriespage
 app.get('/categoriespage', function(req, res) {
-
   res.render('pages/categoriespage');
 });
 
@@ -52,24 +54,17 @@ app.get('/userPage', function(req, res) {
 
 //list Page
 app.get('/list', function(req, res) {
-  // db.collection('software').find({category: req.body.id})
   res.render('pages/list');
+});
+
+app.get('/login', function(req, res) {
+  res.render('pages/login');
 });
 
 //Display list of items
 // app.get('/listSoftware', function(req, res) {
 //   db.collection('software').find(req.body).toArray()
 // }
-
-//-----------------POST methods
-// app.post('/softwarelist', function(req, res) {
-//     db.collection('software').find(req.id).toArray(function(err, result) {
-//       if (err) throw err;
-//
-//     }
-// }
-
-
 app.listen(8080);
 
 app.post('/dologin', function(req, res) {
