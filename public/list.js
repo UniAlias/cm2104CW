@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    
     var url = "/getcategory?cat="+cat;
     console.log(url);
 
