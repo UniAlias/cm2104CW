@@ -3,7 +3,7 @@ $(document).ready(function() {
     // console.log("Made it");
     var cat = event.target.id;
     console.log(cat);
-    var url = "/getcategory?cat="+cat;
+    var url = unescape("/getcategory?cat="+cat);
 
     $.ajax({
       type: "GET",
