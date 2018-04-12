@@ -31,6 +31,6 @@ app.get('/listpage', function(req, res) {
 });
 
 //Display list of items
-app.get('/listSoftware', function(req, res) {
-  db.collection('software').find(req.body).toArray()
-}
+// app.get('/listSoftware', function(req, res) {
+//   db.collection('software').find(req.body).toArray()
+// }
