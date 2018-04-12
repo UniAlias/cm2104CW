@@ -52,7 +52,7 @@ app.get('/userPage', function(req, res) {
 
 //list Page
 app.get('/list', function(req, res) {
-  db.collection('software').find({category: req.body.id})
+  // db.collection('software').find({category: req.body.id})
   res.render('pages/list');
 });
 
