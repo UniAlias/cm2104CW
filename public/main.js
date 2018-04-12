@@ -12,7 +12,7 @@ $(document).ready(function() {
       success: function(result)
       {
         console.log(result);
-        window.location.assign("pages/list");
+        window.location.assign("/list");
       }
     });
 
