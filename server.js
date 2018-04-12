@@ -62,8 +62,7 @@ app.get('/login', function(req, res) {
 //Display list of items
 // app.get('/listSoftware', function(req, res) {
 //   db.collection('software').find(req.body).toArray()
-// }
-app.listen(8080);
+// }app.listen(8080);
 
 app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body))
