@@ -30,15 +30,15 @@ app.get('/', function(req, res) {
 });
 
 
-app.post('/getcategory', function(req, res) {
+app.get('/getcategory', function(req, res) {
 var cat = unescape(req.query.cat);
 console.log(cat);
 db.collection('software').find({category: cat}).toArray(function(err, result) {
   if (err) throw err;
-  // res.render('pages/list', {
-  //   software: result
-  // });
-  res.redirect('../views/pages/list');
+  res.render('pages/list', {
+    software: result
+  });
+  // res.redirect('../views/pages/list');
 });
 
 });
