@@ -38,7 +38,7 @@ db.collection('software').find({category: cat}).toArray(function(err, result) {
   // res.render('pages/list', {
   //   software: result
   // });
-  res.redirect('pages/list');
+  res.redirect('../views/pages/list');
 });
 
 });
