@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     var url = "/getcategory?cat="+cat;
     console.log(url);
 
@@ -10,7 +10,12 @@ $(document).ready(function() {
       {
         console.log(result);
         //window.location.assign("/list");
-        console.log(result);
+        var divToFill = $('.container');
+        var output = "";
+        for (var i in result) {
+          output += "<p>" + result[i].name + "</p>";
+        }
+        divToFill.html(output);
       }
     });
 
