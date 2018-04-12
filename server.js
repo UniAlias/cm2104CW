@@ -29,8 +29,19 @@ app.get('/', function(req, res) {
   res.render('pages/homepage');
 });
 
+
+app.get('/getcategory', function(req, res) {
+var cat = req.query.cat;
+db.collection('software').find({category: cat}).toArray(function(err, result) {
+  if (err) throw err;
+  res.send(result);
+}
+
+});
+
 //categoriespage
 app.get('/categoriespage', function(req, res) {
+
   res.render('pages/categoriespage');
 });
 
@@ -41,6 +52,7 @@ app.get('/userPage', function(req, res) {
 
 //list Page
 app.get('/list', function(req, res) {
+  db.collection('software').find({category: req.body.id})
   res.render('pages/list');
 });
 
@@ -48,4 +60,14 @@ app.get('/list', function(req, res) {
 // app.get('/listSoftware', function(req, res) {
 //   db.collection('software').find(req.body).toArray()
 // }
+
+//-----------------POST methods
+app.post('/softwarelist', function(req, res) {
+    db.collection('software').find(req.id).toArray(function(err, result) {
+      if (err) throw err;
+
+    }
+}
+
+
 app.listen(8080);
