@@ -3,15 +3,15 @@ $(document).ready(function() {
     // console.log("Made it");
     var cat = event.target.id;
     console.log(cat);
-    var url = "/getcategory?cat="+cat;
+    var url = "/list?cat="+cat;
     console.log(url);
 
     $.ajax({
       type: "GET",
       url: url,
-      success: function()
+      success: function(result)
       {
-        console.log("success");
+        console.log(result);
       }
     });
 
