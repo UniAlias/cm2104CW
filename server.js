@@ -1,8 +1,8 @@
 //server.js
 //load the things
 
-// const MongoClient = require('mongodb').MongoClient;
-// const url = "mongodb://localhost:27017/software";
+const MongoClient = require('mongodb').MongoClient;
+const url = "mongodb://localhost:27017/software";
 const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
@@ -13,14 +13,14 @@ app.use(express.static('public'))
 //set the view engine to express
 app.set('view engine', 'ejs');
 
-// var db;
-//
-// MongoClient.connect(url, function(err, database) {
-//   if (err) throw err;
-//   db = database;
-//   app.listen(8080);
-//   console.log('listening');
-// });
+var db;
+
+MongoClient.connect(url, function(err, database) {
+  if (err) throw err;
+  db = database;
+  app.listen(8080);
+  console.log('listening');
+});
 
 //use .render to load up an ejs view file
 
@@ -32,7 +32,7 @@ app.get('/', function(req, res) {
 
 app.get('/getcategory', function(req, res) {
 var cat = unescape(req.query.cat);
-console.log("cat");
+console.log(cat);
 db.collection('software').find({category: cat}).toArray(function(err, result) {
   if (err) throw err;
   res.send(result);
