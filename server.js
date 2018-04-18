@@ -2,8 +2,7 @@
 //load the things
 
 const MongoClient = require('mongodb').MongoClient;
-const url1 = "mongodb://localhost:27017/software";
-const url2 = "mongodb://localhost:27017/profiles";
+const url = "mongodb://localhost:27017/profiles";
 const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
