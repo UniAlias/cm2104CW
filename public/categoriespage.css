@@ -1,7 +1,7 @@
 /* This sets the background picture to fit the whole page
     it is only used as a placeholder at the moment */
 body {
-  background-image: url("Software Adoption.jpg");
+  background-image: url("homebackground.jpg");
   background-size: cover;
 }
 
