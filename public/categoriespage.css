@@ -23,6 +23,7 @@ body {
   text-align: center;
   height: 100%;
   bottom: 0;
+  border-radius: 25px;
 }
 
 .row-block {
@@ -34,7 +35,6 @@ body {
   background-color: lightgrey;
   padding-left: 0px;
   padding-right: 0px;
-  border-radius: 25px;
 }
 .col-centered img {
   padding-top: 26px;
