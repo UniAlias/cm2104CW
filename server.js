@@ -64,7 +64,7 @@ app.get('/login', function(req, res) {
   res.render('pages/login');
 });
 
-app.get('/adduser', function(req, res) {
+app.get('/signup', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/signup')
 });
@@ -90,7 +90,7 @@ app.post('/dologin', function(req, res) {
   });
 });
 
-app.post('/adduser', function(req, res) {
+app.post('/signup', function(req, res) {
   //check we are logged in
   if(!req.session.loggedin){res.redirect('/login');return;}
 
