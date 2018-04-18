@@ -1,0 +1,60 @@
+{ "_id" : 1, "name" : "Adobe After Effects", "category" : "Video Editing", "description" : "Adobe After Effects is a digital visual effects, motion graph
+ics, and compositing application developed by Adobe Systems and used in post-production.", "img_url" : "images/Adobe_After_Effects" }
+{ "_id" : 2, "name" : "iMovie", "category" : "Video Editing", "description" : "iMovie is a video editing software application sold by Apple Inc. for the
+Mac and iOS. Users can edit photos, video clips, and add effects.", "img_url" : "images/iMovie" }
+{ "_id" : 3, "name" : "Sony Vegas Movie Studio", "category" : "Video Editing", "description" : "Vegas Movie Studio is a consumer-based video editing soft
+ware designed for the PC. It can edit audio as well as video.", "img_url" : "images/Sony_Vegas" }
+{ "_id" : 4, "name" : "Wondershare", "category" : "Video Editing", "description" : "Wondershare Video Editor lets you import and edit your video, as well
+ as adding special effects and editing via the use of built-in templates.", "img_url" : "images/wondershare" }
+{ "_id" : 5, "name" : "Adobe Premier Elements", "category" : "Video Editing", "description" : "Adobe Premiere Elements is a video editing software publis
+hed by Adobe Systems. It allows for clip organisation, editing and auto-movie generation options.", "img_url" : "images/Adobe_Premier_Elements" }
+{ "_id" : 6, "name" : "Adobe Photoshop", "category" : "Photo Editing", "description" : "Adobe Photoshop is a graphics editor developed and published by A
+dobe Systems for macOS and Windows.", "img_url" : "images/Adobe_Photoshop" }
+{ "_id" : 7, "name" : "Adobe Illustrator", "category" : "Photo Editing", "description" : "Adobe Illustrator is a vector graphics editor developed by Adob
+e Systems. Illustrator is aimed more towards typesetting and logo graphics areas of design.", "img_url" : "images/Adobe_Illustrator" }
+{ "_id" : 8, "name" : "Pixelmator", "category" : "Photo Editing", "description" : "Pixelmator is a graphic editor developed for macOS. Pixelmator lets yo
+u crop, paint, measure and shape graphics.", "img_url" : "images/Pixelmator" }
+{ "_id" : 9, "name" : "Aperture", "category" : "Photo Editing", "description" : "Aperture is a photo editing program developed by Apple Inc. Aperture can
+ import and organise image files, apply corrective adjustments and export to websites.", "img_url" : "images/Aperture" }
+{ "_id" : 10, "name" : "Luminar", "category" : "Photo Editing", "description" : "Luminar is a photo editing software application developed by Skylum. It c
+an be used as a plug-in as well as a standalone product.", "img_url" : "images/Luminar" }
+{ "_id" : 11, "name" : "Steam", "category" : "Gaming", "description" : "Steam is a platform in which both games and various software packages can be downl
+oaded and installed from.", "img_url" : "images/Steam" }
+{ "_id" : 12, "name" : "Battle.net Launcher", "category" : "Gaming", "description" : "The battle.net launcher is a platform from which you can download an
+d update various games produced by games company Blizzard", "img_url" : "images/Battle_Launcher" }
+{ "_id" : 13, "name" : "UPlay", "category" : "Gaming", "description" : "UPlay is a platform in which users can access their ubisoft game titles as well as
+ the rewards/achievements that they have earned through the games.", "img_url" : "images/Uplay" }
+{ "_id" : 14, "name" : "Twitch", "category" : "Gaming", "description" : "Twitch is a software platform in which users can watch fellow gamers stream their
+ favourite titles and choose to subscribe to them.", "img_url" : "images/Twitch" }
+{ "_id" : 15, "name" : "Origin", "category" : "Gaming", "description" : "Origin is a launcher from which you can shop for your favourite origin games as w
+ell as launch the games that you have bought. It also allows you to connect with your friends and play together.", "img_url" : "images/Origin" }
+{ "_id" : 16, "name" : "Microsoft Word", "category" : "Office Work", "description" : "Microsoft Word is a word processing piece of software that is great
+for writing essays and reports.", "img_url" : "images/Word" }
+{ "_id" : 17, "name" : "Microsoft Powerpoint", "category" : "Office Work", "description" : "Microsoft Powerpoint is a slideshow creation and editing piece
+ of software that can help create powerpoints for projects and presentations.", "img_url" : "images/Powerpoint" }
+{ "_id" : 18, "name" : "Microsoft Excel", "category" : "Office Work", "description" : "Microsoft Excel is a piece of software that is great for creating s
+preadsheets that keep control of expenses, experiment results and can even create graphs with the data.", "img_url" : "images/Excel" }
+{ "_id" : 19, "name" : "Microsoft OneNote", "category" : "Office Work", "description" : "Microsoft OneNote is a piece of software that is great for taking
+ notes, storing them and organising them.", "img_url" : "images/OneNote" }
+{ "_id" : 20, "name" : "Microsoft Outlook", "category" : "Office Work", "description" : "Microsoft Outlook is mirosoft's platform for the hotmail/outlook
+email adresses. It allows you to create, receive and manage your emails.", "img_url" : "images/Outlook" }
+{ "_id" : 21, "name" : "Netbeans", "category" : "Software Development", "description" : "Netbeans is an open-source IDE for developing with Java, PHP, C++
+ and other programming languages.", "img_url" : "images/Netbeans" }
+{ "_id" : 22, "name" : "Atom", "category" : "Software Development", "description" : "Atom is a source code editor that can help with developing in Java an
+d other programming languages. It also has built in github integration.", "img_url" : "images/Atom" }
+{ "_id" : 23, "name" : "Notepad++", "category" : "Software Development", "description" : "Notepad++ is a text and source code editor that allows for devel
+oping in languages like Javascript", "img_url" : "images/Notepad++" }
+{ "_id" : 24, "name" : "DrJava", "category" : "Software Development", "description" : "DrJava is a lightweight Java IDE that is primarily aimed at student
+s and beginners in Java programming.", "img_url" : "images/DrJava" }
+{ "_id" : 25, "name" : "Processing 3", "category" : "Software Development", "description" : "Processing is a open-source computer programming IDE that bui
+lds upon java and simplifies the syntax to help beginners learn some programming through a visual setting.", "img_url" : "images/Processing" }
+{ "_id" : 26, "name" : "Avg Antivirus", "category" : "Security", "description" : "Avg Antivirus is a family of antivirus software developed by AVG in orde
+r to protect computers.", "img_url" : "images/AVG_Antivirus" }
+{ "_id" : 27, "name" : "Avast", "category" : "Security", "description" : "Avast is a antivirus software package that helps protect computers from viruses.
+ It also lets you scan your computer for viruses whenever you want.", "img_url" : "images/Avast" }
+{ "_id" : 28, "name" : "Mcafee", "category" : "Security", "description" : "Mcafee VirusScan is an antivirus program created by McAfee. It can scan compute
+rs for viruses.", "img_url" : "images/Mcafee" }
+{ "_id" : 29, "name" : "Malwarebytes", "category" : "Security", "description" : "Malwarebytes is an anti-malware piece of software that will scan your com
+puter for malware and remove it.", "img_url" : "images/Malwarebytes" }
+{ "_id" : 30, "name" : "Kaspersky", "category" : "Security", "description" : "Kaspersky Anti-Virus is an antivirus program that primarily aims at the dete
+ction and removal of malware.", "img_url" : "images/Kaspersky" }
