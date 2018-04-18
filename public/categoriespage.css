@@ -87,7 +87,7 @@ body {
 .categoryPicture {
   height: 250px;
   width: 400px;
-  border-radius: 12px;
+  border-radius: 12px 12px 12px 12px;
 }
 
 /* The .signUP and #signUp css sections set the styling for the div of the sign in button on the nav bar and the div that it is in */
