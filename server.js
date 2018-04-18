@@ -2,7 +2,8 @@
 //load the things
 
 const MongoClient = require('mongodb').MongoClient;
-const url = "mongodb://localhost:27017/software";
+const url1 = "mongodb://localhost:27017/software";
+const url2 = "mongodb://localhost:27017/profiles";
 const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
@@ -74,7 +75,7 @@ app.post('/dologin', function(req, res) {
   var uname = req.body.username;
   var pword = req.body.password;
 
-  db.collection('profiles').findOne({"login.username":uname}, function(err, result) {
+  db.collection('people').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
     if(!result){res.redirect('/login');return}
