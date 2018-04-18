@@ -132,12 +132,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
 }
 
 #getStartedButton {
   height: 50px;
   width: 100px;
+  border-radius: 12px;
 }
 
 #main {
