@@ -137,7 +137,6 @@ body {
 #getStartedButton {
   height: 50px;
   width: 100px;
-  border-radius: 12px;
 }
 
 #main {
@@ -214,6 +213,7 @@ body {
     -moz-box-sizing: border-box;
     counter-increment: bc;
     padding: 0px 5px 5px 5px;
+    border-radius: 12px;
 }
 
 .back:before {
