@@ -213,7 +213,6 @@ body {
     -moz-box-sizing: border-box;
     counter-increment: bc;
     padding: 0px 5px 5px 5px;
-    border-radius: 12px;
 }
 
 .back:before {
@@ -251,6 +250,7 @@ body {
     -moz-box-sizing: border-box;
     -webkit-user-select: none;
     cursor: default;
+    border-radius: 12px;
 }
 
 .button_base:hover {
