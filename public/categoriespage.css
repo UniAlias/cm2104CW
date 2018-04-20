@@ -85,8 +85,12 @@ body {
 
 /* .category-Picture css sets the width and height of the pictures within the category divs */
 .categoryPicture {
-  height: 250px;
-  width: 400px;
+  /*height: 250px;
+  width: 400px;*/
+  	max-width: 20%;
+  	min-width: 240px;
+  	float: left;
+  	margin-right: 5px;
 }
 
 /* The .signUP and #signUp css sections set the styling for the div of the sign in button on the nav bar and the div that it is in */
