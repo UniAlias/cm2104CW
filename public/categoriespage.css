@@ -5,6 +5,10 @@ body {
   background-size: cover;
 }
 
+h3{
+  color: white;
+}
+
 /* This css sets the footer on the page to be fixed to the bottom of the page */
 .footer {
    position: fixed;
@@ -17,6 +21,7 @@ body {
    text-align:left;
    padding: 0px;
 }
+
 .row-block {
   background-color: none;
 }
@@ -81,6 +86,7 @@ body {
   	max-width: 20%;
   	min-width: 180px;
   	margin-right: 5px;
+    border-radius: 12px;
 }
 
 /* .addedDiv sets the background colour and styling properties for the category divs on userpage.html */
