@@ -66,7 +66,7 @@ app.get('/login', function(req, res) {
 });
 
 app.get('/signup', function(req, res) {
-  if(!req.session.loggedin){res.redirect('/login');return;}
+  //if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/signup')
 });
 
