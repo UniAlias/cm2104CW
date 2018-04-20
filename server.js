@@ -70,6 +70,12 @@ app.get('/signup', function(req, res) {
   res.render('pages/signup')
 });
 
+app.get('/logout', function(req, res) {
+  req.session.loggedin = false;
+  req.session.destroy();
+  res.redirect('/');
+});
+
 //Display list of items
 // app.get('/listSoftware', function(req, res) {
 //   db.collection('software').find(req.body).toArray()
@@ -98,6 +104,7 @@ app.post('/signup', function(req, res) {
   //we create the data string from the form components that have been passed in
 
 var datatostore = {
+"_id":req.body.id,
 "gender":req.body.gender,
 "name":{"title":req.body.title,"first":req.body.first,"last":req.body.last},
 "location":{"street":req.body.street,"city":req.body.city,"state":req.body.state,"postcode":req.body.postcode},
