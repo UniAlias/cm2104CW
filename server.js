@@ -71,8 +71,8 @@ app.get('/signup', function(req, res) {
 });
 
 app.get('/logout', function(req, res) {
-  req.session.loggedin = false;
-  req.session.destroy();
+  //req.session.loggedin = false;
+  //req.session.destroy();
   res.redirect('/');
 });
 
