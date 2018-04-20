@@ -88,57 +88,8 @@ body {
   /*height: 250px;
   width: 400px;*/
   	max-width: 20%;
-  	min-width: 400px;
+  	min-width: 240px;
   	margin-right: 5px;
-}
-
-/* The .signUP and #signUp css sections set the styling for the div of the sign in button on the nav bar and the div that it is in */
-#signUp {
-  float: right;
-}
-
-.signUp {
-  float: right;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-/* The .login and #login css sections set the styling for the div of login button on the nav bar abd the div that it is in */
-#login {
-  float: right;
-
-}
-
-.login {
-  float: right;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-/* .passForm and #passwordBox place the text input for the password in the right place by giving the div that the text input field is in margins */
-.passForm {
-  float: right;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#passwordBox {
-  float: right;
-}
-
-/* .userForm places the text input for the username in the right place by giving it the same margins as the password input field */
-.userForm {
-  float: right;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 /* .addedDiv sets the background colour and styling properties for the category divs on userpage.html */
