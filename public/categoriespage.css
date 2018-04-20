@@ -83,6 +83,7 @@ body {
   	max-width: 20%;
   	min-width: 180px;
   	margin-right: 5px;
+    border-radius: 75%;
 }
 
 /* .addedDiv sets the background colour and styling properties for the category divs on userpage.html */
