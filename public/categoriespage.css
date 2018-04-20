@@ -88,7 +88,7 @@ body {
   /*height: 250px;
   width: 400px;*/
   	max-width: 20%;
-  	min-width: 240px;
+  	min-width: 180px;
   	margin-right: 5px;
 }
 
@@ -138,25 +138,4 @@ body {
 /*.catbtn css section makes the button not appear when the page is loaded */
 .catbtn {
   display: none;
-}
-
-.flex-row {
-	display: flex;
-	flex-wrap: wrap;
-}
-.flex-row > [class*='col-'] {
-	display: flex;
-	flex-direction: column;
-}
-
-.flex-row .thumbnail,
-.flex-row .caption {
-	flex-direction: column;
-	display: flex;
-	flex: 1 0 auto;
-	height: auto;
-	position: relative;
-}
-.flex-text {
-	flex-grow: 1;
 }
