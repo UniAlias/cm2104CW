@@ -77,11 +77,11 @@ body {
 }
 
 /* .category-Picture css sets the width and height of the pictures within the category divs */
-img {
+.categoryPicture {
   	max-width: 20%;
   	min-width: 180px;
   	margin-right: 5px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 /* .addedDiv sets the background colour and styling properties for the category divs on userpage.html */
