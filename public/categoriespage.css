@@ -17,22 +17,12 @@ body {
    text-align:left;
    padding: 0px;
 }
-
-/* This gives the mainSection in 'categoriespage.html' its positioning */
-/*#mainSection {
-  text-align: center;
-  height: 100%;
-  bottom: 0;
-  border-radius: 25px;
-}*/
-
 .row-block {
   background-color: none;
 }
 
 /* The next 3 css code sections help give the category-container div and divs within the #category-container their styling */
 .col-centered {
-  background-color: lightgrey;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -50,6 +40,7 @@ body {
 .vertical-centre {
   min-height: 100%;
   min-height: 100vh;
+  min-width: 200px;
 
   display: flex;
   flex-direction: column;
