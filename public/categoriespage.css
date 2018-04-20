@@ -160,7 +160,3 @@ body {
 .flex-text {
 	flex-grow: 1;
 }
-.flex-row img {
-	min-width: 0;
-	width: 100%;
-}
