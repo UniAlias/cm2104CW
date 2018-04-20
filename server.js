@@ -93,7 +93,7 @@ app.post('/dologin', function(req, res) {
 
 app.post('/signup', function(req, res) {
   //check we are logged in
-  if(!req.session.loggedin){res.redirect('/login');return;}
+  //if(!req.session.loggedin){res.redirect('/login');return;}
 
   //we create the data string from the form components that have been passed in
 
