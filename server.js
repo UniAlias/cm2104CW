@@ -55,7 +55,6 @@ app.get('/userPage', function(req, res) {
   res.render('pages/userpage');
 });
 
-//list Page
 app.get('/list', function(req, res) {
   var cat = req.query.cat;
   console.log(cat);
