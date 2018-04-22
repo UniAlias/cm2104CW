@@ -8,6 +8,8 @@ const session = require('express-session');
 const bodyParser = require('body-parser')
 const app = express();
 
+app.use(session({ secret: 'example' }));
+
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static('public'))
 
@@ -66,7 +68,7 @@ app.get('/login', function(req, res) {
 });
 
 app.get('/signup', function(req, res) {
-  if(!req.session.loggedin){res.redirect('/login');return;}
+  //if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/signup')
 });
 
@@ -102,6 +104,7 @@ app.post('/signup', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
 
 var datatostore = {
+"_id":req.body.id,
 "gender":req.body.gender,
 "name":{"title":req.body.title,"first":req.body.first,"last":req.body.last},
 "location":{"street":req.body.street,"city":req.body.city,"state":req.body.state,"postcode":req.body.postcode},
