@@ -102,8 +102,6 @@ app.post('/signup', function(req, res) {
   //check we are logged in
   if(!req.session.loggedin){res.redirect('/login');return;}
 
-  //we create the data string from the form components that have been passed in
-
 var datatostore = {
 "gender":req.body.gender,
 "name":{"title":req.body.title,"first":req.body.first,"last":req.body.last},
