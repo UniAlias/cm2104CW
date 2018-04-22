@@ -71,6 +71,12 @@ app.get('/signup', function(req, res) {
   res.render('pages/signup')
 });
 
+app.get('/logout', function(req, res) {
+  req.session.loggedin = false;
+  req.session.destroy();
+  res.redirect('/');
+});
+
 //Display list of items
 // app.get('/listSoftware', function(req, res) {
 //   db.collection('software').find(req.body).toArray()
