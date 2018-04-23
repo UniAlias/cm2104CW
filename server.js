@@ -64,22 +64,18 @@ app.get('/list', function(req, res) {
 });
 
 app.get('/login', function(req, res) {
+  if(req.session.loggedin){res.redirect('/'); return;}
   res.render('pages/login');
 });
 
 app.get('/signup', function(req, res) {
-  //if(!req.session.loggedin){res.redirect('/login');return;}
+  if(req.session.loggedin){res.redirect('/');return;}
   res.render('pages/signup')
 });
 
 app.get('/logout', function(req, res) {
-<<<<<<< HEAD
-  //req.session.loggedin = false;
-  //req.session.destroy();
-=======
   req.session.loggedin = false;
   req.session.destroy();
->>>>>>> aedbbde281ff8542f8183de922f0af762e093970
   res.redirect('/');
 });
 
