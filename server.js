@@ -82,7 +82,7 @@ app.get('/logout', function(req, res) {
 app.get('/profile', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
   //get the requested user based on their username, eg /profile?username=dioreticllama
-  var uname = req.query.username;
+  var uname = req.session.currentusername;
   //this query finds the first document in the array with that username.
   //Because the username value sits in the login section of the user data we use login.username
   db.collection('people').findOne({
@@ -112,7 +112,7 @@ app.post('/dologin', function(req, res) {
     //if there is no result, redirect the user back to the login system as that username must not exist
     if(!result){res.redirect('/login');return}
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
-    if(result.login.password == pword){ req.session.loggedin = true; req.session.currentuser = result.name.first; res.redirect('/') }
+    if(result.login.password == pword){ req.session.loggedin = true;  req.session.currentusername = result.login.username;req.session.currentuser = result.name.first; res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/login')}
   });
