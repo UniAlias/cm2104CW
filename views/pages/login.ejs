@@ -10,33 +10,34 @@
 
 
 <body>
-      <% include ../partials/navbar %>
-      <div class="container">
+  <% include ../partials/navbar %>
+    <div class="container">
 
-  <main>
-    <div class="jumbotron">
+      <main>
+        <div class="jumbotron">
 
-      <h2>Login</h2>
-      <!-- simple login form, submits to our /dologin route -->
-      <form action="/dologin" method="POST">
-        <input type="text" placeholder="username" name="username">
-        <input type="password" placeholder="password" name="password">
-        <div class="button_base b03_skewed_slide_in" input type="submit" value="Get started!" onclick="window.location.href='/categoriespage'" />
-            <div>Submit</div>
-            <div></div>
-            <div>Submit</div>
+          <h2>Login</h2>
+          <!-- simple login form, submits to our /dologin route -->
+          <form action="/dologin" method="POST">
+            <input type="text" placeholder="username" name="username">
+            <input type="password" placeholder="password" name="password">
+            <div class="button_base b03_skewed_slide_in" input type="button" value="Get started!" onclick="window.location.href='/categoriespage'">
+              <div>Submit</div>
+              <div></div>
+              <div>Submit</div>
+            </div>
+          </form>
+        </div>
+
+
     </div>
-      </form>
+
+    </main>
+
+    <div class="footer">
+      <% include ../partials/footer %>
     </div>
-
-
     </div>
-  </main>
-
-  <div class="footer">
-    <% include ../partials/footer %>
-  </div>
-</div>
 </body>
 
 </html>
