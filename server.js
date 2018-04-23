@@ -1,4 +1,4 @@
-//server.js
+ //server.js
 //load the things
 
 const MongoClient = require('mongodb').MongoClient;
@@ -73,13 +73,8 @@ app.get('/signup', function(req, res) {
 });
 
 app.get('/logout', function(req, res) {
-<<<<<<< HEAD
-  //req.session.loggedin = false;
-  //req.session.destroy();
-=======
   req.session.loggedin = false;
   req.session.destroy();
->>>>>>> aedbbde281ff8542f8183de922f0af762e093970
   res.redirect('/');
 });
 
