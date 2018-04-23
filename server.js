@@ -95,6 +95,7 @@ app.get('/profile', function(req, res) {
       user: result
     })
   });
+});
 
 //Display list of items
 // app.get('/listSoftware', function(req, res) {
