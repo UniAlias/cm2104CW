@@ -64,11 +64,12 @@ app.get('/list', function(req, res) {
 });
 
 app.get('/login', function(req, res) {
+  if(req.session.loggedin){res.redirect('/'); return;}
   res.render('pages/login');
 });
 
 app.get('/signup', function(req, res) {
-  //if(!req.session.loggedin){res.redirect('/login');return;}
+  if(req.session.loggedin){res.redirect('/');return;}
   res.render('pages/signup')
 });
 
