@@ -8,6 +8,8 @@ const session = require('express-session');
 const bodyParser = require('body-parser')
 const app = express();
 
+app.use(session({ secret: 'example' }));
+
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static('public'))
 
@@ -46,6 +48,7 @@ db.collection('software').find({category: cat}).toArray(function(err, result) {
 
 //categoriespage
 app.get('/categoriespage', function(req, res) {
+  if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/categoriespage');
 });
 
@@ -54,7 +57,6 @@ app.get('/userPage', function(req, res) {
   res.render('pages/userpage');
 });
 
-//list Page
 app.get('/list', function(req, res) {
   var cat = req.query.cat;
   console.log(cat);
@@ -71,8 +73,13 @@ app.get('/signup', function(req, res) {
 });
 
 app.get('/logout', function(req, res) {
+<<<<<<< HEAD
   //req.session.loggedin = false;
   //req.session.destroy();
+=======
+  req.session.loggedin = false;
+  req.session.destroy();
+>>>>>>> aedbbde281ff8542f8183de922f0af762e093970
   res.redirect('/');
 });
 
@@ -91,7 +98,7 @@ app.post('/dologin', function(req, res) {
     //if there is no result, redirect the user back to the login system as that username must not exist
     if(!result){res.redirect('/login');return}
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
-    if(result.login.password == pword){res.redirect('/') }
+    if(result.login.password == pword){ req.session.loggedin = true; res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/login')}
   });
@@ -100,8 +107,6 @@ app.post('/dologin', function(req, res) {
 app.post('/signup', function(req, res) {
   //check we are logged in
   //if(!req.session.loggedin){res.redirect('/login');return;}
-
-  //we create the data string from the form components that have been passed in
 
 var datatostore = {
 "_id":req.body.id,
