@@ -32,7 +32,7 @@ app.get('/', function(req, res) {
   res.render('pages/homepage');
 });
 
-
+// This is the route that does the database call depending on what category you clicked on
 app.get('/getcategory', function(req, res) {
 var cat = unescape(req.query.cat);
 console.log(cat);
@@ -47,38 +47,47 @@ db.collection('software').find({category: cat}).toArray(function(err, result) {
 });
 
 //categoriespage
+// This route loads the categories page but checks that the user is logged in first
 app.get('/categoriespage', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/categoriespage');
 });
 
 //userpage
+//This would have loaded the userpage although the userpage is no longer in use
 app.get('/userPage', function(req, res) {
   res.render('pages/userpage');
 });
 
+//This route is the route that loads the list page, it also passes through the
+// category title to the page so that the title of the category can be loaded
 app.get('/list', function(req, res) {
   var cat = req.query.cat;
   console.log(cat);
   res.render('pages/list',{category:cat});
 });
 
+//This is the login route for a user to log in
 app.get('/login', function(req, res) {
   if(req.session.loggedin){res.redirect('/'); return;}
   res.render('pages/login');
 });
 
+//This is the sign up route to access the sign up part of the website
 app.get('/signup', function(req, res) {
   if(req.session.loggedin){res.redirect('/');return;}
   res.render('pages/signup')
 });
 
+//This is the logout route, it sets the loggedin variable to false and also destroys the session
+// meaning that nobody else can access that profile or the previously logged in user's information
 app.get('/logout', function(req, res) {
   req.session.loggedin = false;
   req.session.destroy();
   res.redirect('/');
 });
 
+//This is the profile page route. It calls the database to get all of the details of the user that is currently logged in
 app.get('/profile', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
   //get the requested user based on their username, eg /profile?username=dioreticllama
@@ -102,6 +111,8 @@ app.get('/profile', function(req, res) {
 //   db.collection('software').find(req.body).toArray()
 // }app.listen(8080);
 
+//This is the route that is used once the user has logged in. It logs them in by setting the loggedin session variable to true
+//It also sets the current username for the currently logged in user so that it can be passed through
 app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body))
   var uname = req.body.username;
@@ -118,6 +129,7 @@ app.post('/dologin', function(req, res) {
   });
 });
 
+//This is the signup route that actually adds the new users information to the database.
 app.post('/signup', function(req, res) {
   //check we are logged in
   //if(!req.session.loggedin){res.redirect('/login');return;}
